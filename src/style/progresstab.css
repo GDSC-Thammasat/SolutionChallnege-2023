@@ -1,0 +1,6 @@
+aside.progresstab{
+    float: left;
+    position: fixed;
+    text-align: left;
+    margin-left: 50px;
+}

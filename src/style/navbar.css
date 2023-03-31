@@ -1,0 +1,121 @@
+/* .navbar{
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(255, 189, 67);
+    text-decoration: none;
+    font-weight: bold;
+    position: sticky;
+  }
+  .navbar li{
+      display: inline;
+  }
+  .nav-bar-link{
+    color: black;
+    text-decoration: none;
+    padding: 0px 100px;
+    border-radius: 12%;
+  }
+  .nav-bar-link:hover{
+    color: green;
+    background-color: rgb(255, 189, 67);
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+  
+  }.nav-bar-link:active{
+    color: green;
+    border-bottom:5px solid grey;
+    background-color: rgb(255, 189, 67);
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+  }
+  ul a.active{
+    border-bottom:5px solid grey;
+    background-color: rgb(253, 206, 119);
+  }
+  div.navbar{
+    height: 100%;
+  } */
+
+nav {
+    margin: 0px auto 0;
+    position: relative;
+    width: 560px;
+    height: 40px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+}
+nav a {
+    line-height: 40px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+nav a{
+    width: 140px;
+}
+nav a:hover{
+    background-color: #1abc9c;
+    border-radius: 8px;
+
+}
+nav a:active {
+    color: #640200;
+}
+body.navbar{
+    margin: 0;
+    color: white;
+    background-color: #253545;
+    padding: 1px;
+    /* position: fixed; */
+}
+h1.navbar{
+    margin-top: 10px;
+    border-bottom: none;
+    text-align: center;
+    /* font-size: 50px; */
+    font-weight: bold;
+    height: 25px;
+}
+/* :active, .navbar:hover{
+    background-color: #1abc9c;
+    border-radius: 8px;
+
+} */
+
+/* nav .home, a:nth-child(1):hover~.animation {
+    width: 140px;
+    left: 0;
+    background-color: #1abc9c;
+}
+nav .knowledge, a:nth-child(2):hover~.animation {
+    width: 140px;
+    left: 0px;
+    background-color: #e74c3c;
+}
+nav .stack, a:nth-child(3):hover~.animation {
+    width: 140px;
+    left: 0px;
+    background-color: #3498db;
+}
+nav .about, a:nth-child(4):hover~.animation {
+    width: 140px;
+    left: 0px;
+    background-color: #9b59b6;
+} */
+  

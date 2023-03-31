@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+*{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+aside.knowledge{
+    float: left;
+    position: fixed;
+    text-align: left;
+    margin-left: 50px;
+}
+
+ul.knowledge{
+    text-decoration: none;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+}
+ul li{
+    margin-bottom: 10px;
+}
+a.knowledge:hover{
+    color: blueviolet;
+}a.knowledge:active{
+    color: blueviolet;
+    text-decoration: underline;
+}

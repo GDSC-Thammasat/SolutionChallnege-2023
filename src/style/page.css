@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+*{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+section.function{
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 30px;
+    left: 20%;
+    margin-right: 30%;
+    border-left: 1px solid rgb(203, 202, 202);
+}
+section.question{
+    font-size: 20px;
+}
+section.question#diagnose{
+    font-size: 17.5px;
+    text-align: left;
+}
+section{
+    margin-bottom: 30px;
+}
+section.exercise{
+    justify-content: center;
+}
+div.body#diagnose,div.body#recommendation{
+    font-size: 25px;
+}
+button{
+      margin: 10px;
+      position: fixed;
+}
+body{
+    text-align: center;
+    background-color: #f0f4fb;
+    height: 100%;
+    padding: 1px;
+    padding-bottom: 100px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:  grayscale;
+}
+body.exercise{
+    height: 100px;
+}
+div.question{
+    margin: 30px;
+    
+}
+div#student-id{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+div.knowledge{
+    border-left: 1px solid gray;
+}
+div.exclassifier{
+    position: sticky;
+    float: left;
+    width: 300px;
+    left: 25%;
+}
+div.movenet{
+    position: fixed;
+    /* float: right; */
+    /* right: 50%; */
+    /* z-index: inherit; */
+}
+button{
+    font-weight: bolder;
+    border-radius: 15%;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+}
+label.question{
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+input{
+    width: 1px;
+}
+input[type=radio] {
+    width: 5%;
+    height: 20px;
+    border: 0px;
+}
+select{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    position: relative;
+    left: 5%;
+}
+p.exercise{
+    text-decoration: inline;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+p.summary{
+    font-size: 30px;
+}
+p.recommend{
+    font-size: 25px;
+}
+
+
+/* ExerciseList */
+
+.article-card{
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.exercise-image img{
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+.article-card .exercise-name{
+    text-align: left;
+    margin: 0;
+    color: #22447b;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+.article-card .exercise-duration{
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    /* line-height: 1.5rem; */
+    color: #6b82a7;
+}
+
+
+
+/* Exclassifier */
+.exercise-picture{
+    /* position: absolute; */
+    display: block;
+    border: 2px solid black;
+    border-radius: 8px 8px 0 0;
+    background-color: white;
+}
+.exercise-image .img{
+    height: 100%;
+}
+.exercise-status{
+    /* position: absolute; */
+    display: block;
+    border: 2px solid black;
+    border-radius: 0 0 8px 8px;
+    background-color: #d3f3ec;
+}
+.exercise-status .card-title{
+    text-align: left;
+    margin: 1rem 0;
+    color: #22447b;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 10px;
+}
+.exercise-status .card-excerpt{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.5rem;
+    color: #6b82a7;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Bodypart */
+section.bodypart-description{
+    position: absolute;
+    float: left;
+    left: 10%;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+section.bodypart-question{
+    position: absolute;
+    float: right;
+    right: 10%;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+h2.bodypart-which{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+label.bodypart{
+    display: block;
+    border: 1px solid black;
+    background-color: #1c2939;
+    opacity: 1;
+    width: 400px;
+    height: 175px;
+    margin: 10px;
+    border-radius: 8px;
+    /* border: 3px solid #1abc9c; */
+}
+label.bodypart:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    border: 3px solid #1abc4b;
+}
+label.bodypart:hover .bodypart-text{
+    opacity: 0.7;
+    cursor: pointer;
+    color: #1abc4b;
+}
+span.bodypart-text{
+    font-size: 22px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 65px;
+}
+span.bodypart-image{
+    position: static;
+    height: 175px;
+    float: right;
+}
+.bodypart-image img{
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+}
+
+
+/* Summary */
+section.feedback{
+    font-size: 20px;
+}
+label.feedback{
+    padding: 15px;
+}
+input#student-id{
+    width: 200px;
+    font-size: 15px;
+}
+input#feedback-text{
+    width: 400px;
+    height: 150px;
+    font-size: 15px;
+}
+ul#feedback-score li{
+    font-size: 15px;
+    display: inline;
+}
