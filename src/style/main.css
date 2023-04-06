@@ -40,6 +40,7 @@ button#start{
     margin-top: 200px;
 }
 section.knowledge{
+    position: relative;
     left: 30%;
     margin-right: 30%;
     border-left: 1px solid rgb(203, 202, 202);
@@ -50,4 +51,35 @@ article.knowledge{
 }
 li.knowledge{
     margin-bottom: 10px;
+}
+
+/* Home */
+section.carousel{
+    position: relative;
+    float: left;
+    left: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 200px;
+    width: 400px;
+}
+div.carousel-item{
+    margin-top: 20%;
+    height: 300px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+h4{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.5rem;
 }

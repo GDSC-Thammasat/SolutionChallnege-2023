@@ -5,6 +5,7 @@ import ProgressTab from '../../component/ProgressTab';
 
 import '../../style/page.css'
 import '../../style/button.css'
+import axios from "axios";
 
 function Summary() {
 
@@ -12,12 +13,28 @@ function Summary() {
     const [feedbackScore, setFeedbackScore] = useState(0);
     const [feedbackText, setFeedbackText] = useState('');
 
+    const bodyPart = useSelector(state => state.bodyPart);
     const diagnoseScore = useSelector(state => state.diagnoseScore);
     const stretchScore = useSelector(state => state.stretchScore);
 
     const full_score = diagnoseScore + stretchScore
 
     let risk;
+
+    const url = 'https://us-central1-solutionchallenge2023-be03e.cloudfunctions.net/webApi/api/v1/users';
+    
+    // payload is data to post to backend
+    const payload = { 
+    bodyPart: bodyPart,
+    diagnoseScore: diagnoseScore ,
+    stretchScore: stretchScore,
+    full_score: full_score   ,
+    risk:risk,
+    studentId:studentId,
+    feedbackScore:feedbackScore,
+    feedbackText:feedbackText
+
+    };
 
     if (full_score < 40) {
         risk = "Low";
@@ -38,14 +55,26 @@ function Summary() {
     const handleFeedbackTextChange = (event) => {
         setFeedbackText(event.target.value);
     }
+    // post data to backend
+    const summit = () => {
+        axios.post(url, payload)
+            .then((res) => {
+                console.log(res);
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+    }
 
     const handleSubmit = (event) => {
-        event.preventDefault();
 
+        event.preventDefault();
         // Save to the backend  Redux
         console.log("Student ID: ", studentId);
         console.log("Feedback Score: ", feedbackScore);
         console.log("Feedback Text: ", feedbackText);
+        summit();
+
     }
 
     const isFeedbackScoreValid = feedbackScore !== 0;
@@ -58,7 +87,7 @@ function Summary() {
                 <h1>Recommendation</h1>
                     <section id="recommendation">
                         <div className="summary">
-                            <p className="summary">From your exercise: You have {risk} level risk of Office Syndrome</p>
+                            {/* <p className="summary">From your exercise: You have {risk} level risk of Office Syndrome</p> */}
                         </div>
                         <div>
                             <p className="recommend">This our Recommendation.</p>

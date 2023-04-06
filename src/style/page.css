@@ -1,70 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+
 *{
     font-family: 'Noto Sans Thai', sans-serif;
 }
+
 section.function{
+    display: block;
+    text-align: center;
     position: relative;
     font-size: 30px;
     margin-bottom: 30px;
-    left: 20%;
+    left: 15%;
     margin-right: 30%;
     border-left: 1px solid rgb(203, 202, 202);
 }
+
 section.question{
     font-size: 20px;
 }
+
 section.question#diagnose{
     font-size: 17.5px;
     text-align: left;
 }
+
 section{
     margin-bottom: 30px;
 }
+
 section.exercise{
     justify-content: center;
 }
-div.body#diagnose,div.body#recommendation{
+
+div.body#diagnose, div.body#recommendation{
     font-size: 25px;
 }
+
 button{
-      margin: 10px;
-      position: fixed;
+    margin: 10px;
+    position: fixed;
 }
+
 body{
     text-align: center;
     background-color: #f0f4fb;
-    height: 100%;
     padding: 1px;
     padding-bottom: 100px;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing:  grayscale;
+    -moz-osx-font-smoothing: grayscale;
 }
+
 body.exercise{
     height: 100px;
 }
+
 div.question{
     margin: 30px;
-    
 }
+
 div#student-id{
     margin-bottom: 30px;
     font-size: 25px;
 }
+
 div.knowledge{
     border-left: 1px solid gray;
 }
+
 div.exclassifier{
     position: sticky;
     float: left;
     width: 300px;
     left: 25%;
 }
+
 div.movenet{
     position: fixed;
-    /* float: right; */
-    /* right: 50%; */
-    /* z-index: inherit; */
 }
+
 button{
     font-weight: bolder;
     border-radius: 15%;
@@ -72,19 +85,23 @@ button{
     width: 200px;
     height: 50px;
 }
+
 label.question{
     margin-bottom: 10px;
     display: inline-block;
     font-weight: bold;
 }
+
 input{
     width: 1px;
 }
-input[type=radio] {
+
+input[type=radio]{
     width: 5%;
     height: 20px;
     border: 0px;
 }
+
 select{
     width: 100px;
     height: 30px;
@@ -92,19 +109,24 @@ select{
     position: relative;
     left: 5%;
 }
+
 p.exercise{
     text-decoration: inline;
     text-align: center;
 }
+
 ul{
     list-style-type: none;
 }
+
 p.summary{
     font-size: 30px;
 }
+
 p.recommend{
     font-size: 25px;
 }
+
 
 
 /* ExerciseList */
@@ -115,12 +137,14 @@ p.recommend{
     border-radius: 20px;
     transition: 0.3s;
 }
+
 .exercise-image img{
     padding: 0;
     max-width: 100%;
     height: auto;
     border-radius: 20px 20px 0 0;
 }
+
 .article-card .exercise-name{
     text-align: left;
     margin: 0;
@@ -129,11 +153,11 @@ p.recommend{
     margin-left: 10px;
     font-weight: bolder;
 }
+
 .article-card .exercise-duration{
     margin: 10px;
     font-size: 1rem;
     font-weight: bold;
-    /* line-height: 1.5rem; */
     color: #6b82a7;
 }
 
@@ -177,20 +201,16 @@ p.recommend{
 
 
 /* Bodypart */
-section.bodypart-description{
-    position: absolute;
-    float: left;
-    left: 10%;
-    margin-top: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
-}
 section.bodypart-question{
-    position: absolute;
+    display: block;
+}
+
+section.bodypart-question{
+    position: relative;
     float: right;
     right: 10%;
     margin-top: 20px;
-    margin-left: 5%;
+    margin-left: 0;
     margin-right: 5%;
 }
 h2.bodypart-which{
@@ -200,7 +220,7 @@ h2.bodypart-which{
 label.bodypart{
     display: block;
     border: 1px solid black;
-    background-color: #1c2939;
+    background-color: rgba(28, 41, 57, 0.4);
     opacity: 1;
     width: 400px;
     height: 175px;
@@ -255,4 +275,138 @@ input#feedback-text{
 ul#feedback-score li{
     font-size: 15px;
     display: inline;
+}
+
+@media screen and (min-width: 768px) {
+    
+
+}
+@media screen and (min-width: 1280px)
+{
+    
+    
+}
+
+/* smartphone */
+@media only screen and (max-width: 500px){
+    section.carousel{
+        display: none;
+    }
+    .progresstab{
+        display: none;
+    }
+    aside.knowledge{
+        display: none;
+    }
+
+    /* Bodypart */
+    section.bodypart-description {
+        float: none;
+        margin: 50px auto;
+        width: 90%;
+        max-width: 600px;
+      }
+      
+      section.bodypart-question {
+        float: none;
+        margin: 20px auto;
+        width: 90%;
+        max-width: 600px;
+      }
+      
+      h2.bodypart-which {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      
+      label.bodypart {
+        display: block;
+        border: 1px solid black;
+        background-color: #1c2939;
+        opacity: 1;
+        margin: 10px auto;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 600px;
+        height: auto;
+        overflow: hidden;
+      }
+      
+      label.bodypart:hover {
+        opacity: 0.7;
+        cursor: pointer;
+        border: 3px solid #1abc4b;
+      }
+      
+      label.bodypart:hover .bodypart-text {
+        opacity: 0.7;
+        cursor: pointer;
+        color: #1abc4b;
+      }
+      
+      span.bodypart-text {
+        font-size: 22px;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      span.bodypart-image {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .bodypart-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      
+
+}
+
+/* tablets */
+@media (min-width:501px) and (max-width:768px){
+    section.carousel{
+        display: none;
+    }
+    .progresstab{
+        display: none;
+    }
+    aside.knowledge{
+        display: none;
+    }
+}
+
+/* labtop desktop */
+@media (min-width:769px) and (max-width:1200px){
+    .site-container{
+        max-width: 608px;
+    }
+    .article-card {
+        display: grid;
+        grid-template-rows: 220px 1fr;
+    }
+    .progresstab{
+        display:block;
+    }
+}
+
+/* widescrren */
+@media (min-width:1201px) {
+    .site-container{
+        max-width: 1156px;
+    }
+    .progresstab{
+        display:block;
+    }
+}
+
+/* landscpae */
+@media (max-height:500px) {
+
 }

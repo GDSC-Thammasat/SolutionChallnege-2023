@@ -1,4 +1,5 @@
 import React from 'react';
+import '../style/navbar.css'
 import '../style/App.css';
 // import { NavLink } from 'react-router-dom';
 
@@ -6,26 +7,15 @@ import banner from '../assets/images/banner.png'
 
 function Navbar() {
     return (
-      <body className='navbar'>
+      <body className='navbar-us'>
 
-          <h1 className='navbar'><img src={banner} alt="" height="40px"/></h1>
-          <div className='navbar' id='navbar'>
+          <h1 className='navbar-us'><img src={banner} alt="" height="40px"/></h1>
+          <div className='navbar-us' id='navbar-us'>
             <nav>
-                <a className='navbar' href="/">HOME</a>
-                <a className='navbar' href="/Knowledge">KNOWLEDGE</a>
-                <a className='navbar' href="/Stack">TECH STACK</a>
-                <a className='navbar' href="/About">ABOUT</a>
-                {/* <a className='navbar' href="/Contact-Us">CONTACT US</a> */}
-              {/* <li className='home-menu'>
-                <NavLink className='nav-bar-link' to = "/"
-                  >HOME</NavLink>
-              </li>
-              <li>
-                <NavLink className='nav-bar-link' to = "/Knowledge">KNOWLEDGE</NavLink>
-              </li>
-              <li>
-                <NavLink className='nav-bar-link' to = "/Stack">TECH STACK</NavLink>
-              </li> */}
+                <a className='navbar-us' href="/">HOME</a>
+                <a className='navbar-us' href="/Knowledge">KNOWLEDGE</a>
+                <a className='navbar-us' href="/Stack">TECH STACK</a>
+                <a className='navbar-us' href="/About">ABOUT</a>
             </nav>
             </div>
 

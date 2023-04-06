@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { setBodyPart } from '../store';
+import { setBodyPart } from '../store/store';
 
 import neckache from '../assets/images/neckache1.jpeg';
 import backache from '../assets/images/backache1.jpeg';
@@ -20,12 +20,7 @@ function QuestionBodypart() {
     };
 
   return (
-      <div>
-      <section className="bodypart-description">
-        <h2>Lorem, ipsum.</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, quo?</p>
-      </section>
-
+      <div className="bodypart-question">
       <section className="bodypart-question">
         <h2 className='bodypart-which'>Which part of your body are you experiencing pain?</h2>
         <div className="bodypart-choices">

@@ -1,13 +1,14 @@
 import '../../style/main.css'
 import '../../style/button.css'
+import stack from '../../assets/images/stack.png'
 
 const Stack = () => {
     return (
-            <div>
+            <body>
                 <div>
-                This is Tech Stack Page
+                    <img src={stack} alt="" style={{width:"90%"}}/>
                 </div>
-            </div>
+            </body>
     )
     }
 export default Stack

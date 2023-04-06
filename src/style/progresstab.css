@@ -1,4 +1,5 @@
 aside.progresstab{
+    display:block;
     float: left;
     position: fixed;
     text-align: left;

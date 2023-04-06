@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from "react";
 import { useSelector } from 'react-redux';
-import { setStretchScore } from "../store";
+import { setStretchScore } from "../store/store";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import {Classifier} from './MovenetComponent';
